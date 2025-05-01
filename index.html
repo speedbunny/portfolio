@@ -1,25 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarah Eaglesfield – AI Portfolio</title>
- 
-
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .notion-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-<main>
-
-<iframe 
-  src="https://global-woodpecker-73e.notion.site/ebd/1e6be934b8d080688eaefd9a15c620bf" 
-  width="100%" 
-  height="100vh" 
-  style="border:none; overflow:hidden;" 
-  frameborder="0" 
-  allowfullscreen>
-</iframe>
-
-</main>
+    <main class="notion-container">
+        <iframe 
+            src="https://global-woodpecker-73e.notion.site/ebd/1e6be934b8d080688eaefd9a15c620bf" 
+            allowfullscreen
+            onload="this.style.height = window.innerHeight + 'px';"
+            sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+        ></iframe>
+    </main>
 </body>
 </html>
