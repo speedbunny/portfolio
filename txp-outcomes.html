@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Insight - Consolidated Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.1);
+        }
+        .pill {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-weight: 500;
+            font-size: 0.875rem;
+        }
+        .pill-green { background-color: #D1FAE5; color: #065F46; }
+        .pill-red { background-color: #FEE2E2; color: #991B1B; }
+        .pill-blue { background-color: #DBEAFE; color: #1E40AF; }
+        .pill-amber { background-color: #FEF3C7; color: #92400E; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold text-gray-900">Project Insight: Consolidated Dashboard</h1>
+            <p class="mt-2 text-lg text-gray-600">A synthesis of key findings and strategic recommendations from the project deliverables.</p>
+        </header>
+
+        <!-- The Original Client Ask -->
+        <section class="mb-10">
+             <div class="card">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">The Original Client Ask</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    The 'FactFind' questionnaire, while comprehensive, experienced significant customer drop-off. The primary objective was to analyse the 326-question process to identify and eliminate friction. The core strategic question was: 
+                    <strong class="font-semibold text-indigo-700">"How can we shorten the questionnaire to increase completion rates without materially impacting business process accuracy?"</strong> 
+                </p>
+            </div>
+        </section>
+
+        <!-- Strategic Summary -->
+        <section class="mb-10">
+            <div class="bg-blue-800 text-white rounded-lg p-6 shadow-lg">
+                <h2 class="text-2xl font-bold mb-2">Definitive Strategic Recommendation</h2>
+                <p class="text-blue-100 mb-4">The comprehensive analysis across all project phases provides a clear, data-validated path forward. The optimal strategy is a two-phased approach that maximises efficiency with minimal risk and operational complexity.</p>
+                <div class="bg-blue-900 p-4 rounded-md">
+                    <p class="font-semibold text-lg">Execute a <span class="text-cyan-300">Population-Level Optimisation</span> immediately, followed by an <span class="text-cyan-300">Adaptive Routing</span> implementation based on product interest.</p>
+                    <p class="font-bold text-lg mt-2 text-amber-300">Conclusively <span class="underline">abandon</span> the demographic-specific routing approach as it is operationally complex and statistically unjustified.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- KPI Cards -->
+        <section class="mb-10">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">The Business Case in Numbers</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1: Phase 1 ROI -->
+                <div class="card">
+                    <h3 class="font-bold text-xl text-gray-900">Phase 1 ROI: Quick Win</h3>
+                    <p class="text-gray-600 mt-2">Removing the 100 worst-performing questions is a low-risk, high-reward action.</p>
+                    <div class="mt-4">
+                        <p class="text-4xl font-bold text-green-600">31%</p>
+                        <p class="font-medium text-gray-700">Questionnaire Reduction</p>
+                    </div>
+                    <div class="mt-2">
+                        <p class="text-2xl font-bold text-green-700">&lt;0.4%</p>
+                        <p class="font-medium text-gray-700">Accuracy Loss (Negligible)</p>
+                    </div>
+                    <div class="mt-4"><span class="pill pill-green">Source: DEL 4 & 5</span></div>
+                </div>
+
+                <!-- Card 2: Phase 2 ROI -->
+                <div class="card">
+                    <h3 class="font-bold text-xl text-gray-900">Phase 2 ROI: Enhancement</h3>
+                    <p class="text-gray-600 mt-2">Simple, rule-based adaptive routing provides a significant further boost.</p>
+                     <div class="mt-4">
+                        <p class="text-4xl font-bold text-blue-600">45-60%</p>
+                        <p class="font-medium text-gray-700">Total Potential Reduction</p>
+                    </div>
+                    <div class="mt-2">
+                        <p class="text-xl font-semibold text-blue-700">Based on product interest</p>
+                        <p class="font-medium text-gray-700">(PMI, IP, Debt)</p>
+                    </div>
+                    <div class="mt-4"><span class="pill pill-blue">Source: DEL 6 & 10</span></div>
+                </div>
+                
+                <!-- Card 3: Demographic Justification -->
+                <div class="card">
+                    <h3 class="font-bold text-xl text-gray-900">Case Against Demographics</h3>
+                    <p class="text-gray-600 mt-2">Demographic routing adds complexity for almost no performance gain.</p>
+                     <div class="mt-4">
+                        <p class="text-4xl font-bold text-red-600">&lt;5%</p>
+                        <p class="font-medium text-gray-700">Of behaviour explained by demographics</p>
+                    </div>
+                    <div class="mt-2">
+                        <p class="text-2xl font-bold text-red-700">~0.19%</p>
+                        <p class="font-medium text-gray-700">Max performance gain (insignificant)</p>
+                    </div>
+                    <div class="mt-4"><span class="pill pill-red">Source: DEL 9</span></div>
+                </div>
+
+                <!-- Card 4: Feasibility -->
+                <div class="card">
+                    <h3 class="font-bold text-xl text-gray-900">High Technical Feasibility</h3>
+                    <p class="text-gray-600 mt-2">The recommended approach uses standard, proven technology.</p>
+                     <div class="mt-4">
+                        <p class="text-3xl font-bold text-amber-700">No AI/ML Required</p>
+                        <p class="font-medium text-gray-700">Simple conditional logic is sufficient</p>
+                    </div>
+                    <div class="mt-2">
+                        <p class="text-xl font-semibold text-amber-800">Low Risk, Low Cost</p>
+                        <p class="font-medium text-gray-700">Standard web development</p>
+                    </div>
+                    <div class="mt-4"><span class="pill pill-amber">Source: DEL 7</span></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Core Findings Visualization -->
+        <section>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Visualising the Core Findings</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <div class="card">
+                    <h3 class="font-bold text-xl text-gray-900 mb-4">Friction is Universal</h3>
+                    <p class="text-gray-600 mb-4">The analysis in DEL 4, confirmed by DEL 9, shows that the most problematic questions create friction for <span class="font-bold">all customers</span>, regardless of age or income. This is the foundation of the population-level strategy.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">&#10007;</span> <div><span class="font-semibold">Financial Scrutiny:</span> Detailed questions about granular spending (e.g., clothing, food) feel invasive.</div></li>
+                        <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">&#10007;</span> <div><span class="font-semibold">Complex Calculations:</span> Questions requiring long-term projections or complex maths are frequently abandoned.</div></li>
+                        <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">&#10007;</span> <div><span class="font-semibold">Pricing & Premiums:</span> Asking for premium amounts early triggers price sensitivity and drop-offs.</div></li>
+                        <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">&#10007;</span> <div><span class="font-semibold">Sensitive Medical Details:</span> Detailed requests about specific treatments cause significant resistance.</div></li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 class="font-bold text-xl text-gray-900 mb-4">The Recommended Adaptive Model</h3>
+                     <p class="text-gray-600 mb-4">DEL 6 and 7 proved that a simple, non-AI routing model based on user-stated product interest is the most effective way to further shorten the questionnaire.</p>
+                    <!-- Simple diagram -->
+                    <div class="font-mono text-sm text-gray-700 space-y-2 bg-gray-100 p-4 rounded-md">
+                        <p class="text-center font-bold">[START: All Users]</p>
+                        <p class="text-center">&#9587;</p>
+                        <p class="border border-blue-400 p-2 rounded text-center bg-blue-50">Q: Interested in Private Medical Insurance?</p>
+                        <div class="flex justify-around">
+                            <p>&#9587; <span class="text-red-600 font-semibold">(NO: 62%) &#8594; SKIP 15 Qs</span></p>
+                            <p>&#9587; <span class="text-green-600 font-semibold">(YES: 38%)</span></p>
+                        </div>
+                        <p class="text-center">&#9587;</p>
+                         <p class="border border-blue-400 p-2 rounded text-center bg-blue-50">Q: Interested in Income Protection?</p>
+                         <div class="flex justify-around">
+                            <p>&#9587; <span class="text-red-600 font-semibold">(NO: 45%) &#8594; SKIP 12 Qs</span></p>
+                            <p>&#9587; <span class="text-green-600 font-semibold">(YES: 55%)</span></p>
+                        </div>
+                        <p class="text-center">&#9587;</p>
+                        <p class="text-center font-bold">[Final Questionnaire]</p>
+                    </div>
+                </div>
+
+                <div class="card lg:col-span-2">
+                    <h3 class="font-bold text-xl text-gray-900 mb-4">Valuable Demographic Insights (for Communication, Not Routing)</h3>
+                    <p class="text-gray-600 mb-4">While not strong enough to justify separate journeys, the demographic analysis in DEL 9 uncovered key behavioural nuances. These are highly valuable for tailoring marketing and communication strategies.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800">Surprising Finding: High-Income Efficiency</h4>
+                            <p class="text-gray-600 mt-1">Customers with incomes over £150k are <span class="font-bold">less likely</span> than the upper-middle income group to complete granular financial details. They value an efficient, relevant process over a comprehensive one. <span class="font-bold text-green-700">Implication:</span> Market to this group by emphasising speed and relevance.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800">Confirmed Hypothesis: Middle-Age Peak</h4>
+                            <p class="text-gray-600 mt-1">The 36-50 age group shows the highest and most consistent engagement across all protection and financial planning categories. <span class="font-bold text-green-700">Implication:</span> This group is the core audience for comprehensive family protection messaging.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800">Insight: Young Adult Pragmatism</h4>
+                            <p class="text-gray-600 mt-1">Contrary to assumptions, adults aged 18-35 complete medical questions at near-average rates, showing practical risk awareness despite high resistance to financial scrutiny. <span class="font-bold text-green-700">Implication:</span> Communicate with transparency and focus on digital-native processes.</p>
+                        </div>
+                         <div>
+                            <h4 class="font-semibold text-lg text-gray-800">Insight: Lower-Income Focus on Essentials</h4>
+                            <p class="text-gray-600 mt-1">The lower-income segment shows strong engagement with essential protection questions, despite being sensitive to cost. <span class="font-bold text-green-700">Implication:</span> Lead with the value and affordability of core, essential cover.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Implementation Roadmap -->
+        <section class="mt-12">
+             <h2 class="text-3xl font-bold text-gray-900 mb-6">Implementation Roadmap</h2>
+             <div class="card">
+                <div class="relative border-l-2 border-blue-500 ml-4 py-4">
+                    <!-- Phase 1 -->
+                    <div class="mb-8 pl-8 relative">
+                        <div class="absolute -left-4 top-1 w-7 h-7 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">1</div>
+                        <span class="pill pill-green">Immediate Action</span>
+                        <h3 class="text-xl font-bold mt-2">Phase 1: Population-Level Optimisation</h3>
+                        <p class="text-gray-600">Implement the low-risk, high-reward removal of the 100 negative predictor questions identified in DEL 4.</p>
+                        <p class="mt-2 font-semibold">Goal: Achieve 31% efficiency gain immediately.</p>
+                    </div>
+                    <!-- Phase 2 -->
+                    <div class="pl-8 relative">
+                        <div class="absolute -left-4 top-1 w-7 h-7 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">2</div>
+                        <span class="pill pill-blue">Medium Term</span>
+                        <h3 class="text-xl font-bold mt-2">Phase 2: Adaptive Routing Development</h3>
+                        <p class="text-gray-600">Develop and deploy the simple, rule-based adaptive routing system based on the logic from DEL 6.</p>
+                        <p class="mt-2 font-semibold">Goal: Achieve a total of 45-60% questionnaire reduction.</p>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
+
